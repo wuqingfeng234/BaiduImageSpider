@@ -92,7 +92,7 @@ class Crawler:
                 print("产生未知错误，放弃保存")
                 continue
             else:
-                print("小黄图+1,已有" + str(self.__counter) + "张小黄图")
+                print("+1,已有" + str(self.__counter) + "张小图片")
                 self.__counter += 1
         return
 
@@ -164,6 +164,6 @@ if __name__ == '__main__':
         # 如果不指定参数，那么程序会按照下面进行执行
         crawler = Crawler(0.05)  # 抓取延迟为 0.05
 
-        crawler.start('美女', 10, 2, 30)  # 抓取关键词为 “美女”，总数为 1 页，开始页码为 2，每页30张（即总共 2*30=60 张）
+        crawler.start('秋天', 10, 2, 30)  # 抓取关键词为 “美女”，总数为 1 页，开始页码为 2，每页30张（即总共 2*30=60 张）
         # crawler.start('二次元 美女', 10, 1)  # 抓取关键词为 “二次元 美女”
         # crawler.start('帅哥', 5)  # 抓取关键词为 “帅哥”
